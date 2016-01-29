@@ -2,13 +2,13 @@
   "name": "help-doc",
   "version": "1.0.0",
   "description": "帮助文档生成与关联程序",
-  "main": "''",
+  "main": "index.js",
   "scripts": {
     "start": "node server.js"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/antQi"
+    "url": "https://github.com/antQi/help-doc.git"
   },
   "author": "xiewanqi",
   "license": "ISC",
