@@ -1,4 +1,4 @@
-# 帮助文档生成与关联程序(初始化项目)
+# 帮助文档生成与关联程序
 
 ## 准备
 * 安装<a href="http://nodejs.cn/" target="_blank">nodejs V4.0+ </a>
