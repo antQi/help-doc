@@ -5,6 +5,6 @@
 * npm install
 
 ## 启动
-*　npm start
+* npm start
 
 ### 好啦，开始写文档吧！
