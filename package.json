@@ -4,7 +4,7 @@
   "description": "帮助文档生成与关联程序",
   "main": "index.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
@@ -13,6 +13,7 @@
   "author": "xiewanqi",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.13.3"
+    "body-parser": "^1.14.2",
+    "express": "^4.13.4"
   }
 }
