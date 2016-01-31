@@ -1,0 +1,24 @@
+.list-group-item.active, .list-group-item.active:focus, .list-group-item.active:hover {
+	background-color: #F2F2F2;
+	border: none
+}
+.list-group-item.children.active:before {
+	content: ' - ';
+	color: green;
+}
+.list-group-item.children.active>a {
+	margin-bottom: 5px;
+	display: inline-block;
+}
+.list-group-item.children:before {
+	content: ' + ';
+	font-weight: bold;
+	color: red
+}
+
+.m-t-xs{
+	margin-top: 5px
+}
+.m-b-xs{
+	margin-bottom: 5px
+}
