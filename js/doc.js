@@ -21,7 +21,8 @@
 			menu += '</ul>';
 			$('#content').html(menu);
 			$('#menu').metisMenu();
-			
+
+			//绑定编辑事件
 			$('.edit').each(function(k,v){
 				$(v).click(function(){
 					if(this.dataset){
@@ -29,7 +30,15 @@
 						var key=this.dataset.edit.split(',')[1];
 						$('#editKey').val(key);
 						$('#editItem').val(item);
-						$('#add').trigger('click')
+						//获取关联文档
+						$.get('../getDoc?key='+key)
+						.fail(function(){
+							alert('哎呀,'+item+'的帮助文档获取失败啦.')
+						})
+						.done(function(data){
+							$('.note-editable').html(data.code?data.msg:'在这里添加文档');
+						})
+						$('#add').trigger('click');
 					}
 				})
 			})
