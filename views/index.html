@@ -1,43 +1,37 @@
 <!DOCTYPE html>
 <html ng-app="wboll">
-	<head>
-		<title>添加帮助文档</title>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="icon" href="img/icon.png">
-		<link rel="stylesheet" href="../css/bootstrap.min.css" rel="stylesheet">
-		<link rel="stylesheet" href="../css/summernote/summernote.css" rel="stylesheet">
-		<link href="../font-awesome/css/font-awesome.css" rel="stylesheet">
-		<body>
-			<div class="container">
-				<div class="row">
-					<div class="col-sm-12">
-						<ul class="nav nav-pills">
-							<li role="presentation">
-								<a href="#">关联帮助文档</a>
-							</li>
-							<li role="presentation" class="active">
-								<a href="#">添加帮助文档</a>
-							</li>
-						</ul>
+
+<head>
+	<title>帮助文档</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- <link rel="icon" href="img/icon.png"> -->
+	<link rel="stylesheet" href="../css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="../css/summernote/summernote.css" rel="stylesheet">
+	<link href="../font-awesome/css/font-awesome.css" rel="stylesheet">
+	<link href="../css/common.css" rel="stylesheet">
+	<body>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12" style="margin-bottom:20px">
+					<ul class="nav nav-pills">
+						<li role="presentation" class="active"><a href="#doc" aria-controls="home" role="tab" data-toggle="tab">关联帮助文档</a></li>
+						<li role="presentation"><a id="add" href="#addDoc" aria-controls="home" role="tab" data-toggle="tab">添加帮助文档</a></li>
+					</ul>
+				</div>
+				<div class="col-sm-12 tab-content">
+					<div role="tabpanel" class="tab-pane fade in active" id="doc" data-ui="doc.html" data-script="doc/help,js/lib/jquery.metisMenu,js/doc">
 					</div>
-					<div class="col-sm-12">
-						<div id="summernote">summernote 1</div>
+					<div role="tabpanel" class="tab-pane fade" id="addDoc" data-ui="addDoc.html" data-script="js/addDoc">
 
 					</div>
 				</div>
 			</div>
-		</body>
-		<script type="text/javascript" src="../js/jquery-2.1.1.min.js"></script>
-		<script type="text/javascript" src="../js/bootstrap.min.js"></script>
-		<script type="text/javascript" src="../js/summernote/summernote.min.js"></script>
+		</div>
+	</body>
+	<script type="text/javascript" src="../js/lib/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="../js/lib/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../js/lib/summernote/summernote.min.js"></script>
+	<script type="text/javascript" src="../js/global.js"></script>
 
-		<script type="text/javascript">
-			$(document).ready(function() {
-				$('#summernote').summernote();
-				$('.note-editor').css({'margin-top':'20px','margin-bottom':'20px'})
-				$('.note-editable').css({'border':'1px solid #F0EDED'});
-			});
-		</script>
-
-	</html>
+</html>
