@@ -13,23 +13,16 @@
 			//绑定事件
 			$('#saveDoc').click(function(){
 				var data={
-					key:$('#editItem').val(),
+					key:$('#editKey').val(),
 					doc:$('.note-editable').html()
 				}
 				$.post('../saveDoc',data)
 				.fail(function(){
 					alert('啊啊！服务器出错啦.')
 				})
-				.done(function(){
-					console.log('sdfasdf')
+				.done(function(result){
+					alert(result.msg)
 				})
-				// $.get('../doc/help.json')
-				// .fail(function(){
-				// 	alert('啊啊！，４０４');
-				// })
-				// .done(function(data){
-				//
-				// })
 			})
 		},
 		run: function() {
