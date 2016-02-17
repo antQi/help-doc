@@ -29,6 +29,5 @@
 			this.init()
 		}
 	}
-
 	page.run();
 }()
