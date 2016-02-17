@@ -1,4 +1,4 @@
-# 帮助文档生成与关联程序
+# 帮助文档生成与关联程序(即富文本生成文件)
 
 ## 准备
 * 安装<a href="http://nodejs.cn/" target="_blank">nodejs V4.0+ </a>

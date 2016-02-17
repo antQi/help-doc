@@ -9,7 +9,6 @@
 				'height':'400px'
 			})
 			$('.note-editable').css({'height': '83%'});
-
 			//绑定事件
 			$('#saveDoc').click(function(){
 				var data={
@@ -29,6 +28,5 @@
 			this.init()
 		}
 	}
-
 	page.run();
 }()
